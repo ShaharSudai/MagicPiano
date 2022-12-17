@@ -1,0 +1,71 @@
+html {
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: darkcyan;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
+  p1 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin: 0 auto;
+  }
+  
+  #piano {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0;
+  }
+  
+  /* Style the piano keys */
+  .piano-key {
+    display: inline-block;
+    width: 40px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 3px;
+    background: white;
+    position: relative;
+  }
+  
+  .piano-key.black {
+    width: 25px;
+    height: 120px;
+    background: black;
+  }
+  
+  .piano-key.playing {
+    /* Add a highlight to the key when it's being played */
+    background: lightyellow;
+  }
+  
+  .piano-key.highlighted {
+    /* Add a highlight to the key when it's part of the selected scale */
+    background: yellow;
+  }
+  
+  .piano-key div {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: black;
+  }
+  
+  /* Center the dropdown list section */
+  .dropdown-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
